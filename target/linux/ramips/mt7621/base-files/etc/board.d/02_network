@@ -176,6 +176,12 @@ ramips_setup_interfaces()
 		ucidef_set_interface_lan "lan1 lan2 lan3 lan4"
 		ucidef_set_interface "qtn" ifname "eth1" protocol "static" ipaddr "1.1.1.1" netmask "255.255.255.0"
 		;;
+	zte,e8820s)
+		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" "wan"
+		;;
+	zte,e8820v2)
+		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" "wan"
+		;;
 	ruijie,rg-ew1200g-pro-v1.1)
 		ucidef_set_interfaces_lan_wan "lan3 lan2 lan1" "wan"
 		;;
